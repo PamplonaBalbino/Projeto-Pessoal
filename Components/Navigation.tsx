@@ -41,7 +41,6 @@ export default function Navigation() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('Blue.300', 'Blue.300')}
         align={'center'}>
-
         <Flex //NAV HAMBURGER
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -55,7 +54,6 @@ export default function Navigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -63,12 +61,10 @@ export default function Navigation() {
             color={('Green.100')}>
             Guide Sapiens
           </Text>
-
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
-
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
@@ -88,7 +84,6 @@ export default function Navigation() {
             }>
             ENTRAR
           </Button>
-
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -105,7 +100,6 @@ export default function Navigation() {
           </Button>
         </Stack>
       </Flex>
-
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
